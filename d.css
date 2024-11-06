@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(48, 210, 243);
+}
+img{
+    width:100px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    background-color: yellow;
+    animation-name: movingdiv;
+}
+
+
+ @keyframes movingdiv{
+    0%{
+        transform:translate(0vw,50vh);
+    }
+    25%{
+        transform:translate(50vw,0vh);
+    }
+    50%{
+        transform:translate(98vw,50vh);
+    }
+    75%{
+        transform:translate(50vw,98vh);
+    }
+    100%{
+        transform:translate(0vw,50vh);
+    } 
+}
